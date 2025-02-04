@@ -22,11 +22,11 @@
             alt="image du logo"
             class="w-[150px] sm:w-[300px]"
           />
-          <h1 class="text-3xl sm:text-6xl">LOGO</h1>
+          <p class="text-3xl sm:text-6xl">LOGO</p>
         </div>
         <i class="fa-solid fa-bars w-[10%] sm:text-4xl sm:h-[80px]"></i>
       </nav>
-
+<div class="md:flex md:flex-col md:pt-80">
       <h2 class="text-white mt-10 text-5xl flex text-center flex-col">
         In the hall of the<span class="font-bold text-6xl"> Mountain King</span>
       </h2>
@@ -51,6 +51,7 @@
           >Download</a
         >
       </div>
+    </div>
     </header>
 
     <section
@@ -93,6 +94,7 @@
 
     <section id="about" class="bg-nuage-img px-4 text-white sm:bg-center sm:bg-cover">
       <div class="bg-blue-400 opacity-40 py-10 px-4 flex flex-col gap-8">
+        <div class="md:flex md:flex-col md:gap-8 md:text-center">
         <h2 class="text-4xl">Ligula Mattis Ornare Ultricies</h2>
         <h3 class="text-2xl">Pellentesque Cursus Amet Parturient Etiam</h3>
         <p>
@@ -101,6 +103,7 @@
           Donec porttitor ultrices posuere. Nulla fringilla nunc ut dapibus
           pulvinar.
         </p>
+      </div>
         <div class="flex justify-center">
           <article
             class="w-[50%] h-[180px] border-2 flex flex-col justify-around text-center"
@@ -123,7 +126,7 @@
 
     <section
       id="blog"
-      class="py-20 px-4 bg-neutral-off-white flex flex-col gap-4"
+      class="py-20 px-4 bg-neutral-off-white flex flex-col gap-4 lg:mx-8"
     >
       <h2 class="text-gray-500 text-4xl mb-8">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -148,14 +151,14 @@
 
       <a
         href=""
-        class="bg-pink-700 w-[50%] h-[60px] text-white text-xl flex justify-center items-center"
+        class="bg-pink-700 w-[50%] h-[60px] text-white text-xl flex justify-center items-center md:w-[100%]"
         >Take a Look >></a
       >
 
       <img src="./images/1200.jpeg" alt="image d'une fille sur un velo" />
     </section>
 
-    <section id="history" class="bg-photo-img px-4">
+    <section id="history" class="bg-photo-img px-4 lg:mx-8">
       <article
         class="py-10 bg-blue-400 opacity-40 px-4 text-white flex flex-col gap-4"
       >
@@ -179,18 +182,48 @@
       </article>
     </section>
 
-    <section id="photos" class="bg-gray-400 py-10 flex flex-col gap-2  sm:grid grid-cols-3 h-full">
-        <img src="images/300.jpeg" alt="" />
-        <img src="images/776.jpeg" alt="" class="row-span-5" />
-        <img src="images/800.jpeg" alt="" class="row-span-3"/>
-        <img src="images/400.jpeg" alt="" class="row-span-2 row-start-2"/>
-        <img src="images/2476.jpeg" alt="" class="row-start-4"/>
-        <img src="images/439.jpeg" alt=""  class="row-span-2 col-start-3 row-start-4"/>
-        <img src="images/140.jpeg" alt="" class="row-start-5"/>
-    </section>
+    <section class="md:flex bg-gray-300  pb-6 lg:justify-center" id="photos">
+      <div class="gap-3 flex flex-col md:mx-[10px] md:my-[50px] md:hidden" id="phototel">
+          <img class="md:w-[31%] " src="./images/300.jpeg" alt="Photo d'un salon avec une télé et des enceintes">
+          <img class="md:w-[31%]" src="./images/776.jpeg" alt="Photo d'une montagne dans un paysage désertique">
+          <img class="md:w-[31%]" src="./images/800.jpeg" alt="Photo d'une arche du Golden Gate Bridge vue de proche">
+          <img class="md:w-[31%]" src="./images/400.jpeg" alt="Photo d'un coucher de soleil en altitude">
+          <img class="md:w-[31%]" src="./images/2476.jpeg" alt="Photo d'une personne tenant une caméra">
+          <img class="md:w-[31%]" src="./images/439.jpeg" alt="Photo d'un avion ecrasé">
+          <img class="" src="./images/140.jpeg" alt="Photo d'un panneau de motel américain">
+
+      </div>
+      <div class="hidden md:flex md:w-auto md:px-6 md:py-10 md:gap-4 lg:w-[100vw] lg:justify-center" id="phototab">
+          <div class="md:w-[31%] md:flex md:flex-col md:gap-4 lg:w-[60%]" id="colgauche">
+              <img class="" src="./images/300.jpeg" alt="Photo d'un salon avec une télé et des enceintes">
+              <div class="lg:flex md:flex md:flex-col md:gap-4 lg:flex-row">
+                  <img class="hidden lg:flex lg:w-[50%]" src="./images/800.jpeg"
+                      alt="Photo d'une arche du Golden Gate Bridge vue de proche">
+                  <div class="md:flex md:flex-col md:gap-4">
+                      <img class="" src="./images/400.jpeg" alt="Photo d'un coucher de soleil en altitude">
+                      <img class="lg:h-full" src="./images/2476.jpeg" alt="Photo d'une personne tenant une caméra">
+                  </div>
+              </div>
+              <img class="lg:w-full lg:h-full" src="./images/140.jpeg" alt="Photo d'un panneau de motel américain">
+          </div>
+
+          <img class="md:w-[31%] lg:hidden" src="./images/776.jpeg"
+              alt="Photo d'une montagne dans un paysage désertique">
+          <div class="md:w-[31%] md:h-full md:flex md:flex-col md:gap-4 lg:object-cover lg:justify-center">
+              <img class="lg:hidden " src="./images/800.jpeg"
+                  alt="Photo d'une arche du Golden Gate Bridge vue de proche">
+              <img class="md:w-[31%] lg:flex lg:w-full hidden" src="./images/776.jpeg"
+                  alt="Photo d'une montagne dans un paysage désertique">
+              <img class="lg:w-full" src="./images/439.jpeg" alt="Photo d'un avion ecrasé">
+          </div>
+      </div>
+
+
+
+  </section>
 
     <section class="partenaires">
-      <div>
+      <div class="flex flex-col px-10 lg:mx-80">
         <img src="images/logo-sample-01.jpg" alt="" />
         <img src="images/logo-sample-02.jpg" alt="" />
         <img src="images/logo-sample-03.png" alt="" />
@@ -219,7 +252,7 @@
         />
         <a
           href=""
-          class="bg-pink-700 text-lg w-[50%] h-[40px] flex justify-center items-center"
+          class="bg-pink-700 text-lg w-[50%] h-[40px] flex justify-center items-center md:w-[100%]"
           >Submit Newsletter</a
         >
       </article>
